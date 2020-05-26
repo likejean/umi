@@ -2,11 +2,7 @@ import React from 'react';
 import { connect } from 'umi';
 import { Button } from 'antd';
 
-const mapStateToProps = (state: any) => (
-  {
-    counter: state.Counter.count
-  }
-);
+const mapStateToProps = (state: any) => ({counter: state.Counter.count});
 
 const mapDispatchToProps = (dispatch: any) => ({
   counterPlus: () => dispatch({ type: 'Counter/plus' }),
